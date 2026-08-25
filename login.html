@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+</head>
+<body>
+    <!-- Improved HTML -->
+<main class="login-page">
+  <div class="login-container">
+    
+    <!-- Navigation Back Link -->
+    <a href="index.html" class="login-container__back-btn">&larr; Back to Home</a>
+    
+    <!-- Login Card Wrapper -->
+    <div class="login-card">
+      <div class="login-card__header">
+        <h1 class="login-card__title">Welcome Back</h1>
+        <p class="login-card__subtitle">Log in to track your orders and manage your profile</p>
+      </div>
+
+      <!-- Login Credential Form -->
+      <form class="login-form" id="login-form" novalidate>
+        
+        <!-- Email Input Group -->
+        <div class="form-group">
+          <label for="login-email" class="form-group__label">Email Address</label>
+          <div class="form-group__input-wrapper">
+            <input 
+              type="email" 
+              id="login-email" 
+              class="form-group__input" 
+              placeholder="name@example.com" 
+              required
+            >
+          </div>
+          <span class="form-group__error-msg" id="email-error"></span>
+        </div>
+
+        <!-- Password Input Group -->
+        <div class="form-group">
+          <div class="form-group__label-row">
+            <label for="login-password" class="form-group__label">Password</label>
+            <a href="#forgot" class="form-group__forgot-link">Forgot?</a>
+          </div>
+          <div class="form-group__input-wrapper">
+            <input 
+              type="password" 
+              id="login-password" 
+              class="form-group__input" 
+              placeholder="••••••••" 
+              required
+            >
+          </div>
+          <span class="form-group__error-msg" id="password-error"></span>
+        </div>
+
+        <!-- Form Submission Button -->
+        <button type="submit" class="btn btn--primary login-form__submit-btn">
+          Sign In
+        </button>
+      </form>
+
+      <!-- Alternating Action Footer Link -->
+      <div class="login-card__footer">
+        <p>New to Larya Fashion? <a href="#signup" class="login-card__footer-link">Create an account</a></p>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+</body>
+</html>
+<style>
+
+/* Structural Layout Main Wrapper */
+.login-page {
+  background-color: var(--clr-bg, #FDFBF7); /* Unified signature base palette */
+  min-height: calc(100vh - 80px); /* Centers form perfectly on the viewport height remaining */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-lg, 1.5rem);
+}
+
+.login-container {
+  width: 100%;
+  max-width: 440px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Minimalist Back Anchor Callout */
+.login-container__back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs, 0.5rem);
+  color: var(--clr-text-muted, #665F55);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: var(--space-md, 1rem);
+  transition: color 0.2s ease, transform 0.2s ease;
+  align-self: flex-start;
+}
+
+.login-container__back-btn:hover {
+  color: var(--clr-accent, #C86D51);
+  transform: translateX(-4px); /* Interactive visual alignment micro-animation nudge */
+}
+
+/* Master Form Card Container Component */
+.login-card {
+  background-color: var(--clr-bg, #FDFBF7);
+  border: 1px solid var(--clr-border, rgba(200, 109, 81, 0.15));
+  border-radius: var(--radius-md, 12px);
+  padding: calc(var(--space-lg, 1.5rem) * 1.5);
+  box-shadow: 0 10px 30px rgba(200, 109, 81, 0.04);
+}
+
+.login-card__header {
+  text-align: center;
+  margin-bottom: var(--space-xl, 2.5rem);
+}
+
+.login-card__title {
+  font-size: 1.75rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--clr-text, #1A1A1A);
+  text-transform: uppercase;
+  margin-bottom: var(--space-xs, 0.5rem);
+}
+
+.login-card__subtitle {
+  font-size: 0.95rem;
+  color: var(--clr-text-muted, #665F55);
+  line-height: 1.4;
+}
+
+/* Form Group Layout Blocks */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs, 0.5rem);
+  margin-bottom: var(--space-lg, 1.5rem);
+}
+
+.form-group__label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-group__label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--clr-text, #1A1A1A);
+}
+
+.form-group__forgot-link {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--clr-accent, #C86D51);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.form-group__forgot-link:hover {
+  color: var(--clr-text, #1A1A1A);
+  text-decoration: underline;
+}
+
+/* Input Fields Style Tokens Array */
+.form-group__input {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  font-size: 0.95rem;
+  background-color: var(--clr-bg, #FDFBF7);
+  border: 1px solid var(--clr-surface, #D8C5B2);
+  border-radius: 8px;
+  color: var(--clr-text, #1A1A1A);
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Focus and Active States (Sleek Gen-Z Interface Ring) */
+.form-group__input:focus {
+  border-color: var(--clr-accent, #C86D51);
+  box-shadow: 0 0 0 4px rgba(200, 109, 81, 0.1);
+}
+
+/* Diagnostic Error Typography Strings */
+.form-group__error-msg {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #e74c3c; /* Sharp error red */
+  min-height: 1.2em; /* Keeps structural space reserved to prevent visual layout popping bugs */
+  display: block;
+  margin-top: 2px;
+}
+
+/* Submit Action Button Override */
+.login-form__submit-btn {
+  width: 100%;
+  margin-top: var(--space-sm, 0.75rem);
+  box-shadow: 0 4px 14px rgba(200, 109, 81, 0.25);
+}
+
+/* Layout Alternate Footnotes Base */
+.login-card__footer {
+  text-align: center;
+  margin-top: var(--space-xl, 2.5rem);
+  padding-top: var(--space-lg, 1.5rem);
+  border-top: 1px solid var(--clr-border, rgba(200, 109, 81, 0.15));
+  font-size: 0.9rem;
+  color: var(--clr-text-muted, #665F55);
+}
+
+.login-card__footer-link {
+  color: var(--clr-accent, #C86D51);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.login-card__footer-link:hover {
+  color: var(--clr-text, #1A1A1A);
+  text-decoration: underline;
+}
+</style>
+
+<script>
+    /* ==========================================================================
+   USER SESSION & VALIDATION ENGINE (For login.html)
+   ========================================================================== */
+
+document.addEventListener('DOMContentLoaded', () => {
+  initLoginSession();
+});
+
+function initLoginSession() {
+  const loginForm = document.getElementById('login-form');
+  const emailInput = document.getElementById('login-email');
+  const passwordInput = document.getElementById('login-password');
+  
+  const emailError = document.getElementById('email-error');
+  const passwordError = document.getElementById('password-error');
+
+  if (!loginForm) return; // Guard clause to protect non-login screens
+
+  // 1. CHECK RETENTION: If user is already logged in, skip the form instantly
+  const activeUser = localStorage.getItem('larya_logged_in_user');
+  if (activeUser) {
+    handleSuccessfulLogin(JSON.parse(activeUser).email, true);
+  }
+
+  // 2. FORM SUBMISSION EVENT
+  loginForm.addEventListener('submit', (event) => {
+    event.preventDefault(); // Prevent page reload
+
+    // Reset error text displays cleanly
+    emailError.textContent = '';
+    passwordError.textContent = '';
+
+    let isValid = true;
+
+    // Validate Email Field
+    if (!emailInput.value.trim()) {
+      emailError.textContent = 'Email address is required.';
+      isValid = false;
+    } else if (!validateEmailStructure(emailInput.value.trim())) {
+      emailError.textContent = 'Please enter a valid email address.';
+      isValid = false;
+    }
+
+    // Validate Password Field
+    if (!passwordInput.value) {
+      passwordError.textContent = 'Password is required.';
+      isValid = false;
+    } else if (passwordInput.value.length < 6) {
+      passwordError.textContent = 'Password must be at least 6 characters.';
+      isValid = false;
+    }
+
+    // 3. PERSIST ACTIVE SESSION ON SUCCESS
+    if (isValid) {
+      const userData = {
+        email: emailInput.value.trim(),
+        loginTime: new Date().getTime()
+      };
+
+      // Save credentials array to localStorage to retain memory after refresh
+      localStorage.setItem('larya_logged_in_user', JSON.stringify(userData));
+      
+      handleSuccessfulLogin(userData.email, false);
+    }
+  });
+}
+
+/* Helper function to validate email structure strings */
+function validateEmailStructure(email) {
+  const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return regex.test(email);
+}
+
+/* UI Handler on Successful Login */
+function handleSuccessfulLogin(email, wasAlreadyLoggedIn) {
+  const loginCard = document.querySelector('.login-card');
+  if (!loginCard) return;
+
+  // Visual success feedback
+  loginCard.innerHTML = `
+    <div style="text-align: center; padding: var(--space-lg); display: flex; flex-direction: column; gap: var(--space-md);">
+      <div style="font-size: 3rem;">👋</div>
+      <h2 class="login-card__title" style="color: var(--clr-accent);">Logged In!</h2>
+      <p style="color: var(--clr-text-muted); font-size: 0.95rem;">
+        Welcome back, <strong style="color: var(--clr-text);">${email}</strong>.
+      </p>
+      <p style="color: var(--clr-text-muted); font-size: 0.85rem;">
+        ${wasAlreadyLoggedIn ? 'Session restored automatically.' : 'Your shopping experience is locked in.'}
+      </p>
+      <button id="logout-btn" class="btn btn--secondary" style="margin-top: var(--space-md);">Log Out</button>
+    </div>
+  `;
+
+  // Wire up a logout button to clear memory when requested
+  document.getElementById('logout-btn').addEventListener('click', () => {
+    localStorage.removeItem('larya_logged_in_user');
+    window.location.reload(); // Refresh to show blank login form again
+  });
+}
+
+</script>

@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index nonhtml </title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Cardo:ital,wght@0,400;0,700;1,400&family=Cedarville+Cursive&family=Noto+Sans+Nabataean&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Improved HTML -->
+<header class="header">
+  <div class="header__container">
+    <a href="#home" class="header__logo-link">
+      <img class="header__logo" src="lf.jpg" alt="Logo">
+    </a>
+
+    <nav class="header__nav" aria-label="Main navigation">
+      <a href="#home" class="header__link header__link--active">Home</a>
+      <a href="shop.html" class="header__link">Shop</a>
+      <a href="cat.html" class="header__link">Categories</a>
+      <a href="about.html" class="header__link">About</a>
+      <a href="help.html" class="header__link">Help</a>
+    </nav>
+
+    <div class="header__actions">
+      <div class="search-bar">
+        <input class="search-bar__input" type="search" placeholder="Search Products..." aria-label="Search products">
+      </div>
+      
+      <a href="cart.html" class="header__icon-btn" aria-label="Cart">🛒</a>
+      <a href="login.html" class="header__profile-btn">👤 me</a>
+      
+      <button class="header__toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+
+  <nav class="mobile-menu" aria-label="Mobile navigation">
+    <a href="#home" class="mobile-menu__link">Home</a>
+    <a href="shop.html" class="mobile-menu__link">Shop</a>
+    <a href="cat.html" class="mobile-menu__link">Categories</a>
+    <a href="about.html" class="mobile-menu__link">About</a>
+    <a href="help.html" class="mobile-menu__link">Help</a>
+    <a href="cart.html" class="mobile-menu__link">🛒 Cart</a>
+    <a href="login.html" class="mobile-menu__link">👤 Login</a>
+  </nav>
+</header>
+
+  <main class="fashion-main" id="home">
+    
+    <!-- Left Title Branding Section -->
+    <section class="fashion-title">
+      <div class="title-content">
+        <p>CURATED WITH LOVE</p>
+        <h1>Larya Fashion</h1>
+        <span>Fashion starts with you.</span>
+      </div>
+    </section>
+
+    <!-- Right Slanted Dynamic Content Container -->
+    <section class="hero-container">
+      
+      <!-- Girl's Collection Panel -->
+      <div class="fashion-box girls-box">
+        <div class="box-inner-wrap">
+          <div class="fashion-box__content">
+            <p>THE EDIT</p>
+            <h2>Women's<br>Collection</h2>
+            <a href="women.html" class="shop-btn">Shop now →</a>
+          </div>
+          
+          <div class="model-wrapper">
+            <div class="model-area">
+              <img src="main.jpg" alt="Model wearing outfit 1">
+              
+              <!-- Hotspots with nested product cards -->
+              <div class="hotspot top-hotspot" data-product="top">
+                <article class="product-card" id="top">
+                  <img src="top.jpg" alt="white top">
+                  <div><h3>White Top</h3><p>$23</p></div>
+                </article>
+              </div>
+              
+              <div class="hotspot shirt-hotspot" data-product="shirt">
+                <article class="product-card" id="shirt">
+                  <img src="shirt.jpg" alt="Shirt">
+                  <div><h3>Casual Shirt</h3><p>$78</p></div>
+                </article>
+              </div>
+              
+              <div class="hotspot pants-hotspot" data-product="pants">
+                <article class="product-card" id="pants">
+                  <img src="pants.jpg" alt="Grey pants">
+                  <div><h3>Grey Pants</h3><p>$45</p></div>
+                </article>
+              </div>
+              
+              <div class="hotspot shoe-hotspot" data-product="shoe">
+                <article class="product-card" id="shoe">
+                  <img src="shoe.jpg" alt="Shoes">
+                  <div><h3>Classic Sneakers</h3><p>$65</p></div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Boy's Collection Panel -->
+      <div class="fashion-box boys-box">
+        <div class="box-inner-wrap">
+          <div class="fashion-box__content">
+            <p>NEW SEASON</p>
+            <h2>Boy's<br>Collection</h2>
+            <a href="men.html" class="shop-btn">Shop now →</a>
+          </div>
+          
+          <div class="model-wrapper">
+            <div class="model-area">
+              <img src="menmodel.png" alt="Model wearing outfit 2">
+              
+              <!-- Hotspots with nested product cards -->
+              <div class="hotspot top-hotspot" data-product="top2">
+                <article class="product-card" id="top2">
+                  <img src="top2.jpg" alt="Red top 2">
+                  <div><h3>Red Top 2</h3><p>$23</p></div>
+                </article>
+              </div>
+              
+              <div class="hotspot shirt-hotspot" data-product="shirt2">
+                <article class="product-card" id="shirt2">
+                  <img src="shirt2.jpg" alt="Casual Shirt 2">
+                  <div><h3>Casual Shirt 2</h3><p>$78</p></div>
+                </article>
+              </div>
+              
+              <div class="hotspot pants-hotspot" data-product="pants2">
+                <article class="product-card" id="pants2">
+                  <img src="pants2.avif" alt="Grey pants 2">
+                  <div><h3>Grey Pants 2</h3><p>$45</p></div>
+                </article>
+              </div>
+              
+              <div class="hotspot shoe-hotspot" data-product="shoe2">
+                <article class="product-card" id="shoe2">
+                  <img src="shoe2.jpg" alt="Shoes 2">
+                  <div><h3>Leather Boots</h3><p>$110</p></div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+<!-- Improved HTML -->
+<section class="hero" aria-label="Featured Collections">
+  <div class="hero__slider">
+    
+    <!-- Slide 1 -->
+    <div class="hero__slide">
+      <img class="hero__image" src="model1.jpg" alt="Woman modeling minimal aesthetic summer outfit">
+      <div class="hero__content">
+        <h2 class="hero__title">Summer Collection</h2>
+        <p class="hero__description">Discover fashion for everyday life. Casuals, summer wear, and trending styles that fit your budget.</p>
+        <div class="hero__actions">
+          <button class="btn btn--primary">Shop Now</button>
+          <button class="btn btn--secondary">Explore More</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="hero__slide">
+      <img class="hero__image" src="trend10.jpg" alt="Man wearing comfortable modern everyday streetwear">
+      <div class="hero__content">
+        <h2 class="hero__title">Casual Wear</h2>
+        <p class="hero__description">Ultra-comfortable outfits tailored cleanly for your high-rotation daily wardrobe baseline.</p>
+        <div class="hero__actions">
+          <button class="btn btn--primary">Shop Now</button>
+          <button class="btn btn--secondary">Explore More</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="hero__slide">
+      <img class="hero__image" src="budget.jpg" alt="Close up profile of curated trending footwear">
+      <div class="hero__content">
+        <h2 class="hero__title">Budget Friendly</h2>
+        <p class="hero__description">High-end style paradigms minus the designer markup. Refresh your rotation for less.</p>
+        <div class="hero__actions">
+          <button class="btn btn--primary">Shop Now</button>
+          <button class="btn btn--secondary">Explore More</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="hero__slide">
+      <img class="hero__image" src="trending.jpg" alt="Group setting displaying the latest viral seasonal fashion trends">
+      <div class="hero__content">
+        <h2 class="hero__title">Trending Now</h2>
+        <p class="hero__description">Unlocking the current algorithmic favorites. Stay ahead of the style curve instantly.</p>
+        <div class="hero__actions">
+          <button class="btn btn--primary">Shop Now</button>
+          <button class="btn btn--secondary">Explore More</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Carousel Navigation Controls -->
+  <button class="hero__nav-btn hero__nav-btn--prev" aria-label="Previous slide">←</button>
+  <button class="hero__nav-btn hero__nav-btn--next" aria-label="Next slide">→</button>
+
+  <!-- Slider Dot Indicators -->
+  <div class="hero__dots" role="tablist" aria-label="Slides">
+    <button class="hero__dot hero__dot--active" role="tab" aria-selected="true" aria-label="Slide 1"></button>
+    <button class="hero__dot" role="tab" aria-selected="false" aria-label="Slide 2"></button>
+    <button class="hero__dot" role="tab" aria-selected="false" aria-label="Slide 3"></button>
+    <button class="hero__dot" role="tab" aria-selected="false" aria-label="Slide 4"></button>
+  </div>
+</section>
+
+<!-- Improved HTML -->
+<section class="categories" aria-labelledby="categories-heading">
+  <h2 class="categories__title" id="categories-heading">Featured Categories</h2>
+  
+  <div class="categories__grid">
+    
+    <!-- Card 1 -->
+    <article class="category-card">
+      <a href="men.html" class="category-card__link">
+        <div class="category-card__image-wrapper">
+          <img class="category-card__image" src="men.jpg" alt="Men's contemporary minimal streetwear collection" loading="lazy">
+        </div>
+        <div class="category-card__meta">
+          <p class="category-card__name">Men’s Wear</p>
+        </div>
+      </a>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="category-card">
+      <a href="women.html" class="category-card__link">
+        <div class="category-card__image-wrapper">
+          <img class="category-card__image" src="women.jpg" alt="Women's modern curation and editorial capsule looks" loading="lazy">
+        </div>
+        <div class="category-card__meta">
+          <p class="category-card__name">Women’s Wear</p>
+        </div>
+      </a>
+    </article>
+
+    <!-- Card 3 -->
+    <article class="category-card">
+      <a href="foot.html" class="category-card__link">
+        <div class="category-card__image-wrapper">
+          <img class="category-card__image" src="shoe1.jpg" alt="Curated trending sneakers and classic silhouettes" loading="lazy">
+        </div>
+        <div class="category-card__meta">
+          <p class="category-card__name">Shoes</p>
+        </div>
+      </a>
+    </article>
+
+    <!-- Card 4 -->
+    <article class="category-card">
+      <a href="acc.html" class="category-card__link">
+        <div class="category-card__image-wrapper">
+          <img class="category-card__image" src="acc.jpg" alt="Minimalist accessories, jewelry, and modern lifestyle pieces" loading="lazy">
+        </div>
+        <div class="category-card__meta">
+          <p class="category-card__name">Accessories</p>
+        </div>
+      </a>
+    </article>
+
+    <!-- Card 5 -->
+    <article class="category-card">
+      <a href="ethnic.html" class="category-card__link">
+        <div class="category-card__image-wrapper">
+          <img class="category-card__image" src="ethnic .jpg" alt="Intricately detailed contemporary traditional clothing lines" loading="lazy">
+        </div>
+        <div class="category-card__meta">
+          <p class="category-card__name">Ethnic Wear</p>
+        </div>
+      </a>
+    </article>
+
+    <!-- Card 6 -->
+    <article class="category-card">
+      <a href="trend.html" class="category-card__link">
+        <div class="category-card__image-wrapper">
+          <img class="category-card__image" src="trend.jpg" alt="High rotation viral aesthetic seasonal trends" loading="lazy">
+        </div>
+        <div class="category-card__meta">
+          <p class="category-card__name">Trending Styles</p>
+        </div>
+      </a>
+    </article>
+
+  </div>
+</section>
+
+<!-- Improved HTML -->
+<section class="products" aria-labelledby="products-heading">
+  <h2 class="products__title" id="products-heading">Featured Products</h2>
+
+  <div class="products__grid">
+    
+    <!-- Product 1 -->
+    <article class="product-card">
+      <div class="product-card__image-wrapper">
+        <img class="product-card__image" src="men bull - Copy.webp" alt="BULLMER Men's Trendy Shirt and Pants Set" loading="lazy">
+        <button class="product-card__wishlist-btn" aria-label="Add to wishlist" aria-pressed="false">💜</button>
+      </div>
+      <div class="product-card__info">
+        <h3 class="product-card__name">BULLMER Men's Trendy Shirt & Pants Set</h3>
+        <div class="product-card__rating">
+          <span class="product-card__stars">4.6 ★</span>
+          <span class="product-card__reviews-count">(1k reviews)</span>
+        </div>
+        <p class="product-card__price">₹886</p>
+      </div>
+    </article>
+
+    <!-- Product 2 -->
+    <article class="product-card">
+      <div class="product-card__image-wrapper">
+        <img class="product-card__image" src="kd.webp" alt="KD Georgette Women's Floral Printed Anarkali Kurta Pant Set" loading="lazy">
+        <button class="product-card__wishlist-btn" aria-label="Add to wishlist" aria-pressed="false">💜</button>
+      </div>
+      <div class="product-card__info">
+        <h3 class="product-card__name">KD Georgette Women's Floral Anarkali Set</h3>
+        <div class="product-card__rating">
+          <span class="product-card__stars">4.6 ★</span>
+          <span class="product-card__reviews-count">(1k reviews)</span>
+        </div>
+        <p class="product-card__price">₹949</p>
+      </div>
+    </article>
+
+    <!-- Product 3 -->
+    <article class="product-card">
+      <div class="product-card__image-wrapper">
+        <img class="product-card__image" src="x.webp" alt="Xymbolic Men's Sport Shoes" loading="lazy">
+        <button class="product-card__wishlist-btn" aria-label="Add to wishlist" aria-pressed="false">💜</button>
+      </div>
+      <div class="product-card__info">
+        <h3 class="product-card__name">Xymbolic Men's Sport Shoes</h3>
+        <div class="product-card__rating">
+          <span class="product-card__stars">4.6 ★</span>
+          <span class="product-card__reviews-count">(1k reviews)</span>
+        </div>
+        <p class="product-card__price">₹573</p>
+      </div>
+    </article>
+
+    <!-- Product 4 -->
+    <article class="product-card">
+      <div class="product-card__image-wrapper">
+        <img class="product-card__image" src="zi.webp" alt="Zibuyu 2 Piece Couple Bracelets Set" loading="lazy">
+        <button class="product-card__wishlist-btn" aria-label="Add to wishlist" aria-pressed="false">💜</button>
+      </div>
+      <div class="product-card__info">
+        <h3 class="product-card__name">Zibuyu 2PC Couple Bracelets Set</h3>
+        <div class="product-card__rating">
+          <span class="product-card__stars">4.6 ★</span>
+          <span class="product-card__reviews-count">(1k reviews)</span>
+        </div>
+        <p class="product-card__price">₹292</p>
+      </div>
+    </article>
+
+    <!-- Product 5 -->
+    <article class="product-card">
+      <div class="product-card__image-wrapper">
+        <img class="product-card__image" src="peo.webp" alt="Peacock Embroidered Couple Matching Outfit" loading="lazy">
+        <button class="product-card__wishlist-btn" aria-label="Add to wishlist" aria-pressed="false">💜</button>
+      </div>
+      <div class="product-card__info">
+        <h3 class="product-card__name">Peacock Embroidered Couple Outfit</h3>
+        <div class="product-card__rating">
+          <span class="product-card__stars">4.6 ★</span>
+          <span class="product-card__reviews-count">(1k reviews)</span>
+        </div>
+        <p class="product-card__price">₹6,249</p>
+      </div>
+    </article>
+
+    <!-- Product 6 -->
+    <article class="product-card">
+      <div class="product-card__image-wrapper">
+        <img class="product-card__image" src="twin.webp" alt="Twinning Couple Matching Outfit" loading="lazy">
+        <button class="product-card__wishlist-btn" aria-label="Add to wishlist" aria-pressed="false">💜</button>
+      </div>
+      <div class="product-card__info">
+        <h3 class="product-card__name">Twinning Couple Matching Outfit</h3>
+        <div class="product-card__rating">
+          <span class="product-card__stars">4.6 ★</span>
+          <span class="product-card__reviews-count">(1k reviews)</span>
+        </div>
+        <p class="product-card__price">₹2,198</p>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- Improved HTML -->
+<footer class="footer">
+  <div class="footer__container">
+    
+    <!-- Brand Info Block -->
+    <div class="footer__brand-col">
+      <h2 class="footer__logo-text">Larya Fashion</h2>
+      <p class="footer__description">
+        Elevating your daily style wardrobe baselines with modern capsule fits and premium trend curations tailored meticulously for you.
+      </p>
+    </div>
+
+    <!-- Navigation Column 1 -->
+    <div class="footer__nav-col">
+      <h3 class="footer__heading">Shop</h3>
+      <ul class="footer__list">
+        <li><a href="men.html" class="footer__link">Men's Wear</a></li>
+        <li><a href="women.html" class="footer__link">Women's Wear</a></li>
+        <li><a href="foot.html" class="footer__link">Shoes & Footwear</a></li>
+        <li><a href="acc.html" class="footer__link">Accessories</a></li>
+      </ul>
+    </div>
+
+    <!-- Navigation Column 2 -->
+    <div class="footer__nav-col">
+      <h3 class="footer__heading">Support</h3>
+      <ul class="footer__list">
+        <li><a href="help.html" class="footer__link">Help Center</a></li>
+        <li><a href="#shipping" class="footer__link">Shipping & Delivery</a></li>
+        <li><a href="#returns" class="footer__link">Returns & Exchanges</a></li>
+        <li><a href="#track" class="footer__link">Track Order</a></li>
+      </ul>
+    </div>
+
+    <!-- Navigation Column 3 -->
+    <div class="footer__nav-col">
+      <h3 class="footer__heading">Company</h3>
+      <ul class="footer__list">
+        <li><a href="about.html" class="footer__link">About Us</a></li>
+        <li><a href="#careers" class="footer__link">Careers</a></li>
+        <li><a href="#contact" class="footer__link">Contact</a></li>
+        <li><a href="#stores" class="footer__link">Store Locator</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Copyright Baseline Layer -->
+  <div class="footer__baseline">
+    <p class="footer__copyright">
+      &copy; 2026 Larya Fashion. <span class="footer__all-rights">All rights reserved.</span>
+    </p>
+  </div>
+</footer>
+
+<script src="index.js"></script>
+</body>
+</html>

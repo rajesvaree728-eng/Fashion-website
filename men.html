@@ -1,0 +1,276 @@
+<!-- Corrected & Improved Full Code Structure -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Men's Wear Collection - Larya Fashion</title>
+  <style>
+    /* Design Tokens */
+    :root {
+      --clr-bg: #FDFBF7;         
+      --clr-surface: #D8C5B2;    
+      --clr-accent: #C86D51;     
+      --clr-text: #1A1A1A;       
+      --clr-text-muted: #665F55; 
+      --clr-border: rgba(200, 109, 81, 0.2); 
+
+      --space-xs: 0.5rem;
+      --space-sm: 0.75rem;
+      --space-md: 1rem;
+      --space-lg: 1.5rem;
+      --space-xl: 2.5rem;
+
+      --radius-md: 12px;
+      --radius-full: 9999px;
+      --max-width: 1200px;
+      --transition-fast: 0.2s ease;
+    }
+
+    /* Global Reset Baseline */
+    * { 
+      box-sizing: border-box; 
+      margin: 0; 
+      padding: 0; 
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--clr-bg);
+      color: var(--clr-text);
+      line-height: 1.5;
+    }
+
+    /* Header Navigation Component */
+    .main-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background-color: rgba(253, 251, 247, 0.85); 
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--clr-border);
+      padding: var(--space-md) var(--space-lg);
+    }
+
+    .main-header__container {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end; 
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+
+    .main-header__nav {
+      display: flex;
+      align-items: center;
+      gap: var(--space-lg);
+    }
+
+    .main-header__link {
+      color: var(--clr-text-muted);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      padding: var(--space-xs) 0;
+      transition: color var(--transition-fast);
+      position: relative;
+    }
+
+    .main-header__link:hover {
+      color: var(--clr-accent);
+    }
+
+    .main-header__link::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: var(--clr-accent);
+      transform: scaleX(0);
+      transition: transform var(--transition-fast);
+      transform-origin: right;
+    }
+
+    .main-header__link:hover::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+
+    /* Collection Section Title */
+    .collection-title {
+      max-width: var(--max-width);
+      margin: var(--space-xl) auto var(--space-lg);
+      padding: 0 var(--space-lg);
+      font-size: clamp(1.5rem, 4vw, 2.25rem);
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: -0.02em;
+      color: var(--clr-text);
+    }
+
+    /* Dynamic Products Grid Wrapper */
+    .products-grid {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 var(--space-lg) var(--space-xl);
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: var(--space-lg);
+    }
+
+    /* ADDED MISSING STYLES: Dynamic Product Card Styling */
+    .card {
+      background-color: var(--clr-bg);
+      border: 1px solid var(--clr-border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      padding: var(--space-md);
+      transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 20px rgba(200, 109, 81, 0.08);
+    }
+
+    .card img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border-radius: calc(var(--radius-md) - 4px);
+      background-color: var(--clr-surface);
+      margin-bottom: var(--space-sm);
+    }
+
+    .card h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--clr-text);
+      margin-bottom: var(--space-xs);
+      line-height: 1.4;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      min-height: 2.8em; /* Keeps layout neat for short titles */
+    }
+
+    .card .price {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--clr-accent);
+      margin-bottom: var(--space-md);
+      margin-top: auto; /* Pushes price to the bottom uniformly */
+    }
+
+    .card .add-to-cart-btn {
+      width: 100%;
+      padding: 0.75rem;
+      background-color: var(--clr-text);
+      color: var(--clr-bg);
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-xs);
+      transition: background-color var(--transition-fast);
+    }
+
+    .card .add-to-cart-btn:hover {
+      background-color: var(--clr-accent);
+    }
+
+    /* Responsive Scaling Viewports */
+    @media (max-width: 576px) {
+      .main-header__container { justify-content: center; }
+      .main-header__nav { gap: var(--space-md); }
+      .collection-title { text-align: center; margin-top: var(--space-lg); }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="main-header">
+    <div class="main-header__container">
+      <nav class="main-header__nav" aria-label="Accessories Sub-navigation">
+        <a href="index.html" class="main-header__link">Home</a>
+        <a href="cat.html" class="main-header__link">Categories</a>
+        <a href="help.html" class="main-header__link">Help</a>
+        <a href="cart.html" class="main-header__link" aria-label="View Shopping Cart">🛒</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1 class="collection-title">Latest Fashionable Men's Wear</h1>
+    <div class="products-grid" id="products"></div>
+  </main>
+
+  <script>
+    const productsDiv = document.getElementById("products");
+
+    // FIXED STORAGE KEY ACCORDING TO SYSTEM CONFIG: Changed to 'ecommerce_cart'
+    let cart = JSON.parse(localStorage.getItem("ecommerce_cart")) || [];
+
+    fetch("products.json")
+      .then(res => res.json())
+      .then(data => {
+        const mens = data.filter(p => p.category === "men");
+        
+        mens.forEach(product => {
+          const card = document.createElement("div");
+          card.className = "card";
+          card.innerHTML = `
+            <img src="${product.image}" alt="${product.title}">
+            <h3>${product.title}</h3>
+            <p class="price">₹${Number(product.price).toLocaleString('en-IN')}</p>
+            <button class="add-to-cart-btn" data-id="${product.id}" data-name="${product.title}" data-price="${product.price}" data-img="${product.image}">
+              🛒 Add to Cart
+            </button>
+          `;
+          productsDiv.appendChild(card);
+        });
+      })
+      .catch(error => {
+        console.log("Error loading JSON:", error);
+      });
+
+    document.addEventListener("click", (event) => {
+      if (event.target.classList.contains("add-to-cart-btn")) {
+        const btn = event.target;
+        const product = {
+          id: btn.dataset.id,
+          name: btn.dataset.name,
+          price: Number(btn.dataset.price),
+          img: btn.dataset.img,
+          quantity: 1
+        };
+        addToCart(product);
+      }
+    });
+
+    function addToCart(product) {
+      // Re-read storage fresh to prevent multi-tab concurrency overrides
+      cart = JSON.parse(localStorage.getItem("ecommerce_cart")) || [];
+      
+      let existing = cart.find(item => item.id === product.id);
+      if (existing) {
+        existing.quantity++;
+      } else {
+        cart.push(product);
+      }
+      
+      localStorage.setItem("ecommerce_cart", JSON.stringify(cart));
+      alert(`${product.name} added to cart!`);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories</title>
+</head>
+<body>
+<!-- Improved HTML -->
+<header class="main-header">
+  <div class="main-header__container">
+    <!-- Fixed the spelling typo from 'Featuref' to 'Featured' -->
+    <h1 class="main-header__title">Featured Categories</h1>
+    
+    <nav class="main-header__nav" aria-label="Categories Sub-navigation">
+      <a href="index.html" class="main-header__link">Home</a>
+      <a href="shop.html" class="main-header__link">Shop</a>
+      <a href="cat.html" class="main-header__link main-header__link--active">Categories</a>
+    </nav>
+  </div>
+</header>
+<!-- Improved HTML -->
+<section class="category-showcase" aria-label="Product Categories Showcase">
+  <div class="category-showcase__grid">
+    
+    <!-- Category Card 1: Men's Wear -->
+    <article class="category-tile">
+      <a href="men.html" class="category-tile__link">
+        <div class="category-tile__image-container">
+          <img src="mens.jpg" alt="Men's fashion capsule collection" class="category-tile__img" loading="lazy">
+        </div>
+        <div class="category-tile__overlay">
+          <span class="category-tile__name">Men's Wear</span>
+          <span class="category-tile__cta">Explore Collection &rarr;</span>
+        </div>
+      </a>
+    </article>
+
+    <!-- Category Card 2: Women's Wear -->
+    <article class="category-tile">
+      <a href="women.html" class="category-tile__link">
+        <div class="category-tile__image-container">
+          <img src="womens.jpg" alt="Women's modern curation and editorial looks" class="category-tile__img" loading="lazy">
+        </div>
+        <div class="category-tile__overlay">
+          <span class="category-tile__name">Women's Wear</span>
+          <span class="category-tile__cta">Explore Collection &rarr;</span>
+        </div>
+      </a>
+    </article>
+
+    <!-- Category Card 3: Footwear -->
+    <article class="category-tile">
+      <a href="foot.html" class="category-tile__link">
+        <div class="category-tile__image-container">
+          <img src="footwear.jpg" alt="Trending sneakers and classic footwear silhouettes" class="category-tile__img" loading="lazy">
+        </div>
+        <div class="category-tile__overlay">
+          <span class="category-tile__name">Footwear</span>
+          <span class="category-tile__cta">Explore Collection &rarr;</span>
+        </div>
+      </a>
+    </article>
+
+    <!-- Category Card 4: Accessories -->
+    <article class="category-tile">
+      <a href="acc.html" class="category-tile__link">
+        <div class="category-tile__image-container">
+          <img src="accs.jpg" alt="Minimalist jewelry and accessories" class="category-tile__img" loading="lazy">
+        </div>
+        <div class="category-tile__overlay">
+          <span class="category-tile__name">Accessories</span>
+          <span class="category-tile__cta">Explore Collection &rarr;</span>
+        </div>
+      </a>
+    </article>
+
+    <!-- Category Card 5: Ethnic Wear -->
+    <article class="category-tile">
+      <a href="ethnic.html" class="category-tile__link">
+        <div class="category-tile__image-container">
+          <img src="nic.png" alt="Contemporary traditional clothing lines" class="category-tile__img" loading="lazy">
+        </div>
+        <div class="category-tile__overlay">
+          <span class="category-tile__name">Ethnic Wear</span>
+          <span class="category-tile__cta">Explore Collection &rarr;</span>
+        </div>
+      </a>
+    </article>
+
+    <!-- Category Card 6: Trending Styles -->
+    <article class="category-tile">
+      <a href="trend.html" class="category-tile__link">
+        <div class="category-tile__image-container">
+          <img src="rr.png" alt="Viral aesthetic seasonal trends" class="category-tile__img" loading="lazy">
+        </div>
+        <div class="category-tile__overlay">
+          <span class="category-tile__name">Trending Styles</span>
+          <span class="category-tile__cta">Explore Collection &rarr;</span>
+        </div>
+      </a>
+    </article>
+
+  </div>
+</section>
+</body>
+</html>
+<style>
+    /* Corrected CSS (Clean, Consistent & Scalable) */
+
+/* Design Tokens - Inherited seamlessly from your core site style */
+:root {
+  /* Brand Palette */
+  --clr-bg: #FDFBF7;         /* Earthy off-white base */
+  --clr-surface: #D8C5B2;    /* Warm sand neutral */
+  --clr-accent: #C86D51;     /* Terracotta signature accent */
+  --clr-text: #1A1A1A;       /* Deep high-contrast charcoal */
+  --clr-text-muted: #665F55; /* Muted slate gray */
+  --clr-border: rgba(200, 109, 81, 0.15);
+
+  /* Spacing System */
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+
+  /* Layout Constants */
+  --radius-md: 12px;
+  --radius-full: 9999px;
+  --max-width: 1200px;
+  --transition-fast: 0.25s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* Global Reset Baseline */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--clr-bg);
+  color: var(--clr-text);
+  line-height: 1.5;
+}
+
+/* Header Component */
+.main-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(253, 251, 247, 0.85); /* Semi-transparent background matching your home layout */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--clr-border);
+  padding: var(--space-md) var(--space-lg);
+}
+
+.main-header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.main-header__title {
+  font-size: clamp(1.25rem, 4vw, 1.75rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--clr-text);
+}
+
+/* Header Sub-Navigation System */
+.main-header__nav {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+.main-header__link {
+  color: var(--clr-text-muted);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: var(--space-xs) 0;
+  transition: color var(--transition-fast);
+  position: relative;
+}
+
+.main-header__link:hover,
+.main-header__link--active {
+  color: var(--clr-accent);
+}
+
+/* Minimalist interactive underline indicator */
+.main-header__link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--clr-accent);
+  transform: scaleX(0);
+  transition: transform var(--transition-fast);
+  transform-origin: right;
+}
+
+.main-header__link:hover::after,
+.main-header__link--active::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Responsive Scaling Overrides for Mobile Viewports */
+@media (max-width: 576px) {
+  .main-header__container {
+    flex-direction: column;
+    gap: var(--space-sm);
+    text-align: center;
+  }
+  
+  .main-header__nav {
+    gap: var(--space-md);
+  }
+}
+/* Corrected CSS (Modern, Clean & Gen-Z Friendly) */
+
+/* Layout Wrapper */
+.category-showcase {
+  max-width: var(--max-width, 1200px);
+  margin: 0 auto;
+  padding: var(--space-xl, 2.5rem) var(--space-lg, 1.5rem);
+}
+
+/* Premium Dynamic Grid Layout */
+.category-showcase__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-lg, 1.5rem);
+}
+
+/* On wider screens, create a high-fashion editorial balance */
+@media (min-width: 992px) {
+  .category-showcase__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Individual Category Tile Module */
+.category-tile {
+  position: relative;
+  border-radius: var(--radius-md, 12px);
+  overflow: hidden;
+  background-color: var(--clr-surface, #D8C5B2);
+  /* Uses explicit vertical aspect ratio for high-end look */
+  aspect-ratio: 4 / 5;
+  box-shadow: 0 4px 20px rgba(26, 26, 26, 0.04);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.category-tile__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+/* Image Wrapper Compartment */
+.category-tile__image-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.category-tile__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Smooth scaling curve transition */
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Integrated Text Overlay Mesh */
+.category-tile__overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: var(--space-lg, 1.5rem);
+  /* Smooth dark gradient fade to optimize legibility */
+  background: linear-gradient(
+    to top,
+    rgba(26, 26, 26, 0.85) 0%,
+    rgba(26, 26, 26, 0.4) 40%,
+    rgba(26, 26, 26, 0) 100%
+  );
+  z-index: 2;
+}
+
+/* Typography elements */
+.category-tile__name {
+  color: var(--clr-bg, #FDFBF7);
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-bottom: var(--space-xs, 0.5rem);
+}
+
+.category-tile__cta {
+  color: var(--clr-surface, #D8C5B2);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  /* Animates upward on interactive hover */
+  transform: translateY(4px);
+  opacity: 0;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* High-Quality Interaction States (Hover Rules) */
+.category-tile:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 32px rgba(200, 109, 81, 0.15);
+}
+
+.category-tile:hover .category-tile__img {
+  transform: scale(1.06);
+}
+
+.category-tile:hover .category-tile__cta {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Ensure mobile layouts display the CTA permanently */
+@media (hover: none) {
+  .category-tile__cta {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+</style>

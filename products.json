@@ -1,0 +1,497 @@
+
+[
+  {
+    "id": 1,
+    "title": "Men Black Cotton Shirt",
+    "price": 999,
+    "image": "men1.jpg",
+    "category": "men"
+  },
+  {
+    "id": 2,
+    "title": "Men White Hoodie",
+    "price": 1499,
+    "image": "mens2.jpg",
+    "category": "men"
+  },
+  {
+    "id": 3,
+    "title": "Men Oversized Beige T‑Shirt",
+    "price": 799,
+    "image": "mens3.jpg",
+    "category": "men"
+  },
+  {
+    "id": 4,
+    "title": "Men Denim Jacket",
+    "price": 1999,
+    "image": "mens4.jpg",
+    "category": "men"
+  },
+  {
+    "id": 5,
+    "title": "Men Slim Fit Jeans",
+    "price": 1299,
+    "image": "mens5.jpg",
+    "category": "men"
+  },
+  {
+    "id": 6,
+    "title": "Men Black Cargo Pants",
+    "price": 1399,
+    "image": "mens6.jpg",
+    "category": "men"
+  },
+  {
+    "id": 7,
+    "title": "Men Olive Green Shirt",
+    "price": 899,
+    "image": "mens7.jpg",
+    "category": "men"
+  },
+  {
+    "id": 8,
+    "title": "Men Brown Leather Jacket",
+    "price": 2499,
+    "image": "mens8.jpg",
+    "category": "men"
+  },
+  {
+    "id": 9,
+    "title": "Men Blue Casual Shirt",
+    "price": 999,
+    "image": "mens9.jpg",
+    "category": "men"
+  },
+  {
+    "id": 10,
+    "title": "Men White Oversized Shirt",
+    "price": 1099,
+    "image": "mens2.jpg",
+    "category": "men"
+  },
+  {
+    "id": 11,
+    "title": "Men Black Joggers",
+    "price": 899,
+    "image": "mens11.jpg",
+    "category": "men"
+  },
+  {
+    "id": 12,
+    "title": "Men Grey Sweatshirt",
+    "price": 1199,
+    "image": "men12.jpg",
+    "category": "men"
+  },
+  {
+    "id": 13,
+    "title": "Men Blue Hoodie",
+    "price": 1499,
+    "image": "mens13.jpg",
+    "category": "men"
+  },
+  {
+    "id": 14,
+    "title": "Men Black Polo T‑Shirt",
+    "price": 699,
+    "image": "mens14.jpg",
+    "category": "men"
+  },
+  {
+    "id": 15,
+    "title": "Men White Sneakers",
+    "price": 1599,
+    "image": "img15.jpg",
+    "category": "men"
+  },
+  {
+    "id": 16,
+    "title": "Men Black Formal Shoes",
+    "price": 1999,
+    "image": "mens16.jpg",
+    "category": "men"
+  },
+  {
+    "id": 17,
+    "title": "Men Blue Denim Shirt",
+    "price": 1199,
+    "image": "mens17.jpg",
+    "category": "men"
+  },
+  {
+    "id": 18,
+    "title": "Men Printed Casual T‑Shirt",
+    "price": 599,
+    "image": "img18.jpg",
+    "category": "men"
+  },
+  {
+    "id": 19,
+    "title": "Men Black Kurta",
+    "price": 999,
+    "image": "img19.jpg",
+    "category": "men"
+  },
+  {
+    "id": 20,
+    "title": "Men Ethnic Nehru Jacket",
+    "price": 1499,
+    "image": "img20.jpg",
+    "category": "men"
+  }
+,
+  {
+    "id": 1,
+    "title": "Women Floral Dress",
+    "price": 1299,
+    "image": "women1.jpg",
+    "category": "women"
+  },
+  {
+    "id": 2,
+    "title": "Women Pink Top",
+    "price": 799,
+    "image": "women2.jpg",
+    "category": "women"
+  },
+  {
+    "id": 3,
+    "title": "Women Blue Denim Jacket",
+    "price": 1999,
+    "image": "women3.jpg",
+    "category": "women"
+  },
+  {
+    "id": 4,
+    "title": "Women Black Jeans",
+    "price": 999,
+    "image": "women4.png",
+    "category": "women"
+  },
+  {
+    "id": 5,
+    "title": "Women Ethnic Kurti",
+    "price": 899,
+    "image": "women5.jpg",
+    "category": "women"
+  },
+  {
+  "id": 6,
+  "title": "Women Oversized White Shirt",
+  "price": 999,
+  "image": "women6.jpg",
+  "category": "women"
+},
+{
+  "id": 7,
+  "title": "Women Lavender Hoodie",
+  "price": 1499,
+  "image": "women7.jpg",
+  "category": "women"
+},
+{
+  "id": 8,
+  "title": "Women Black Palazzo Pants",
+  "price": 899,
+  "image": "women8.jpg",
+  "category": "women"
+},
+{
+  "id": 9,
+  "title": "Women Blue Denim Jeans",
+  "price": 1199,
+  "image": "women9.jpg",
+  "category": "women"
+},
+{
+  "id": 10,
+  "title": "Women Floral Summer Top",
+  "price": 699,
+  "image": "women10.jpg",
+  "category": "women"
+},
+{
+  "id": 1,
+  "title": "Men White Sneakers",
+  "price": 1599,
+  "image": "foot1.jpg",
+  "category": "footwear"
+},
+{
+  "id": 2,
+  "title": "Men Black Running Shoes",
+  "price": 1799,
+  "image": "foot2.jpg",
+  "category": "footwear"
+},
+{
+  "id": 3,
+  "title": "Men Brown Leather Formal Shoes",
+  "price": 2499,
+  "image": "foot3.jpg",
+  "category": "footwear"
+},
+{
+  "id": 4,
+  "title": "Men Grey Sports Shoes",
+  "price": 1399,
+  "image": "foot4.jpg",
+  "category": "footwear"
+},
+{
+  "id": 5,
+  "title": "Men Black Casual Loafers",
+  "price": 1299,
+  "image": "foot5.jpg",
+  "category": "footwear"
+},
+{
+  "id": 6,
+  "title": "Women Pink Sneakers",
+  "price": 1499,
+  "image": "foot6.jpg",
+  "category": "footwear"
+},
+{
+  "id": 7,
+  "title": "Women Beige Sandals",
+  "price": 899,
+  "image": "foot7.jpg",
+  "category": "footwear"
+},
+{
+  "id": 8,
+  "title": "Women Black Heels",
+  "price": 1199,
+  "image": "foot8.jpg",
+  "category": "footwear"
+},
+{
+  "id": 9,
+  "title": "Women White Slip‑On Shoes",
+  "price": 999,
+  "image": "foot9.jpg",
+  "category": "footwear"
+},
+{
+  "id": 10,
+  "title": "Women Brown Flat Sandals",
+  "price": 699,
+  "image": "foot10.jpg",
+  "category": "footwear"
+},
+{
+  "id": 31,
+  "title": "Men Black Leather Wallet",
+  "price": 499,
+  "image": "acc1.jpg",
+  "category": "accessories"
+},
+{
+  "id": 32,
+  "title": "Men Stainless Steel Watch",
+  "price": 1999,
+  "image": "acc2.jpg",
+  "category": "accessories"
+},
+{
+  "id": 33,
+  "title": "Men Black Sunglasses",
+  "price": 799,
+  "image": "acc3.jpg",
+  "category": "accessories"
+},
+{
+  "id": 34,
+  "title": "Men Brown Leather Belt",
+  "price": 599,
+  "image": "acc4.jpg",
+  "category": "accessories"
+},
+{
+  "id": 35,
+  "title": "Men Silver Chain Bracelet",
+  "price": 699,
+  "image": "acc5.jpg",
+  "category": "accessories"
+},
+{
+  "id": 36,
+  "title": "Women Pink Handbag",
+  "price": 1299,
+  "image": "acc6.jpg",
+  "category": "accessories"
+},
+{
+  "id": 37,
+  "title": "Women Gold Earrings",
+  "price": 499,
+  "image": "acc7.jpg",
+  "category": "accessories"
+},
+{
+  "id": 38,
+  "title": "Women Stylish Sunglasses",
+  "price": 899,
+  "image": "acc8.jpg",
+  "category": "accessories"
+},
+{
+  "id": 39,
+  "title": "Women Black Shoulder Bag",
+  "price": 1499,
+  "image": "acc9.jpg",
+  "category": "accessories"
+},
+{
+  "id": 40,
+  "title": "Women Silver Pendant Necklace",
+  "price": 699,
+  "image": "acc10.jpg",
+  "category": "accessories"
+}
+,
+{
+  "id": 41,
+  "title": "Men Black Kurta Set",
+  "price": 1299,
+  "image": "eth1.jpg",
+  "category": "ethnic"
+},
+{
+  "id": 42,
+  "title": "Men Nehru Jacket",
+  "price": 1499,
+  "image": "eth2.jpg",
+  "category": "ethnic"
+},
+{
+  "id": 43,
+  "title": "Men Beige Pathani Kurta",
+  "price": 999,
+  "image": "eth3.jpg",
+  "category": "ethnic"
+},
+{
+  "id": 44,
+  "title": "Men Blue Ethnic Sherwani",
+  "price": 2499,
+  "image": "eth4.jpg",
+  "category": "ethnic"
+},
+{
+  "id": 45,
+  "title": "Men White Kurta Pajama",
+  "price": 899,
+  "image": "eth5.jpg",
+  "category": "ethnic"
+},
+{
+  "id": 46,
+  "title": "Women Pink Anarkali Dress",
+  "price": 1599,
+  "image": "eth6.jpg",
+  "category": "ethnic"
+},
+{
+  "id": 47,
+  "title": "Women Yellow Printed Kurti",
+  "price": 799,
+  "image": "eth7.jpg",
+  "category": "ethnic"
+},
+{
+  "id": 48,
+  "title": "Women Blue Lehenga Choli",
+  "price": 2999,
+  "image": "eth8.jpg",
+  "category": "ethnic"
+},
+{
+  "id": 49,
+  "title": "Women Red Saree",
+  "price": 1999,
+  "image": "eth9.jpg",
+  "category": "ethnic"
+},
+{
+  "id": 50,
+  "title": "Women Green Salwar Suit",
+  "price": 1299,
+  "image": "eth10.jpg",
+  "category": "ethnic"
+},
+{
+  "id": 51,
+  "title": "Oversized Korean Tee",
+  "price": 799,
+  "image": "trend1.jpg",
+  "category": "trending"
+},
+{
+  "id": 52,
+  "title": "Streetwear Graphic Hoodie",
+  "price": 1499,
+  "image": "trend2.jpg",
+  "category": "trending"
+},
+{
+  "id": 53,
+  "title": "Men Cargo Street Pants",
+  "price": 1299,
+  "image": "trend3.jpg",
+  "category": "trending"
+},
+{
+  "id": 54,
+  "title": "Women Korean Pleated Skirt",
+  "price": 999,
+  "image": "trend4.jpg",
+  "category": "trending"
+},
+{
+  "id": 55,
+  "title": "Unisex Summer Oversized Shirt",
+  "price": 899,
+  "image": "trend5.jpg",
+  "category": "trending"
+},
+{
+  "id": 56,
+  "title": "Men Streetwear Jacket",
+  "price": 1999,
+  "image": "trend6.jpg",
+  "category": "trending"
+},
+{
+  "id": 57,
+  "title": "Women Korean Crop Hoodie",
+  "price": 1199,
+  "image": "trend7.jpg",
+  "category": "trending"
+},
+{
+  "id": 58,
+  "title": "Unisex Baggy Jeans",
+  "price": 1399,
+  "image": "trend8.jpg",
+  "category": "trending"
+},
+{
+  "id": 59,
+  "title": "Men Oversized Black Tee",
+  "price": 699,
+  "image": "trend9.jpg",
+  "category": "trending"
+},
+{
+  "id": 60,
+  "title": "Women Korean Floral Top",
+  "price": 799,
+  "image": "trend10.jpg",
+  "category": "trending"
+}
+
+
+]

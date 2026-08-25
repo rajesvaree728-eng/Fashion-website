@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+</head>
+<body>
+<!-- Improved HTML -->
+<header class="main-header">
+  <div class="main-header__container">
+    <h1 class="main-header__title">About This Project</h1>
+    
+    <nav class="main-header__nav" aria-label="About Page Navigation">
+      <a href="index.html" class="main-header__link">Home</a>
+      <a href="shop.html" class="main-header__link">Shop</a>
+      <a href="cat.html" class="main-header__link">Categories</a>
+    </nav>
+  </div>
+</header>
+<!-- Improved HTML -->
+<main class="about-project">
+  <div class="about-project__container">
+    
+    <!-- Intro Copy Block -->
+    <div class="about-project__content">
+      <p class="about-project__text">
+        This E‑Commerce website is a frontend project created to practice and showcase modern web development skills. It includes multiple categories like 
+        <span class="about-project__highlight">Men, Women, Footwear, Accessories, Ethnic Wear, and Trending Fashion</span>.
+      </p>
+      
+      <p class="about-project__text">
+        All products are loaded dynamically using a custom 
+        <span class="about-project__highlight">products.json API</span>. This helps demonstrate real‑world concepts like data fetching, filtering, dynamic rendering, and category‑based product pages.
+      </p>
+      
+      <p class="about-project__text about-project__text--lead">
+        The goal of this project is to build a clean, responsive, and functional shopping interface that looks professional and job‑ready.
+      </p>
+    </div>
+
+    <!-- Technologies Grid Component -->
+    <section class="about-project__skills tech-stack">
+      <h2 class="tech-stack__title">Technologies Used</h2>
+      
+      <ul class="tech-stack__list">
+        <li class="tech-stack__item">
+          <strong class="tech-stack__name">HTML5</strong>
+          <span class="tech-stack__desc">— Page structure and layout.</span>
+        </li>
+        <li class="tech-stack__item">
+          <strong class="tech-stack__name">CSS3</strong>
+          <span class="tech-stack__desc">— Styling, grid layout, responsive design.</span>
+        </li>
+        <li class="tech-stack__item">
+          <strong class="tech-stack__name">JavaScript</strong>
+          <span class="tech-stack__desc">— Fetch API, dynamic product rendering.</span>
+        </li>
+        <li class="tech-stack__item">
+          <strong class="tech-stack__name">JSON</strong>
+          <span class="tech-stack__desc">— Custom product data API.</span>
+        </li>
+        <li class="tech-stack__item">
+          <strong class="tech-stack__name">Live Server</strong>
+          <span class="tech-stack__desc">— Local development environment.</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Future Roadmap Outro Section -->
+    <footer class="about-project__roadmap">
+      <p class="about-project__text">
+        This project is part of my learning journey as a frontend developer, and I will continue improving it by adding features like search, filters, a cart system, and a checkout page.
+      </p>
+    </footer>
+
+  </div>
+</main>
+   
+</body>
+</html>
+<style>
+    /* Corrected CSS (Modern, Clean & Minimalist) */
+
+/* Design Tokens - Inheriting your established project style guidelines */
+:root {
+  /* Brand Palette */
+  --clr-bg: #FDFBF7;         /* Earthy off-white base */
+  --clr-surface: #D8C5B2;    /* Warm sand neutral */
+  --clr-accent: #C86D51;     /* Terracotta signature accent */
+  --clr-text: #1A1A1A;       /* Deep high-contrast charcoal */
+  --clr-text-muted: #665F55; /* Muted slate gray */
+  --clr-border: rgba(200, 109, 81, 0.15);
+
+  /* Spacing System */
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+
+  /* Layout Constants */
+  --radius-md: 12px;
+  --max-width: 800px; /* Narrower width optimized for reading text blocks */
+  --transition-fast: 0.25s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* Global Reset Baseline */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--clr-bg);
+  color: var(--clr-text);
+  line-height: 1.6;
+}
+
+/* Header Component */
+.main-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(253, 251, 247, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--clr-border);
+  padding: var(--space-md) var(--space-lg);
+}
+
+.main-header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px; /* Full layout container limit for the top nav strip */
+  margin: 0 auto;
+}
+
+.main-header__title {
+  font-size: clamp(1.1rem, 4vw, 1.5rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--clr-text);
+}
+
+/* Header Sub-Navigation System */
+.main-header__nav {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+.main-header__link {
+  color: var(--clr-text-muted);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: var(--space-xs) 0;
+  transition: color var(--transition-fast);
+  position: relative;
+}
+
+.main-header__link:hover,
+.main-header__link--active {
+  color: var(--clr-accent);
+}
+
+/* Minimalist interactive underline indicator */
+.main-header__link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--clr-accent);
+  transform: scaleX(0);
+  transition: transform var(--transition-fast);
+  transform-origin: right;
+}
+
+.main-header__link:hover::after,
+.main-header__link--active::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Responsive Navigation Breakpoints */
+@media (max-width: 576px) {
+  .main-header__container {
+    flex-direction: column;
+    gap: var(--space-sm);
+    text-align: center;
+  }
+  
+  .main-header__nav {
+    gap: var(--space-md);
+  }
+}
+/* Corrected CSS (Modern, Clean & Portfolio-Ready) */
+
+/* Structural Layout Main Wrapper */
+.about-project {
+  background-color: var(--clr-bg, #FDFBF7);
+  padding: calc(var(--space-xl, 2.5rem) * 1.5) var(--space-lg, 1.5rem);
+}
+
+/* Constraining text measure to maximize readability metrics */
+.about-project__container {
+  max-width: var(--max-width, 700px); /* 65-70 characters max width for readable lines */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl, 2.5rem);
+}
+
+/* Descriptive Typography Elements */
+.about-project__text {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--clr-text-muted, #665F55);
+  margin-bottom: var(--space-md, 1rem);
+}
+
+/* Special Emphasis Callout Block */
+.about-project__text--lead {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--clr-accent, #C86D51); /* Accents project core goals with brand colors */
+  line-height: 1.5;
+  border-left: 3px solid var(--clr-surface, #D8C5B2);
+  padding-left: var(--space-md, 1rem);
+  margin: var(--space-lg, 1.5rem) 0;
+}
+
+/* Inline Graphic Highlight Badges */
+.about-project__highlight {
+  font-weight: 600;
+  color: var(--clr-text, #1A1A1A);
+  background-color: rgba(216, 197, 178, 0.25); /* Subtle brand background wash tint */
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+
+/* Tech Stack Component Card Box */
+.tech-stack {
+  background-color: var(--clr-bg, #FDFBF7);
+  border: 1px solid var(--clr-border, rgba(200, 109, 81, 0.15));
+  border-radius: var(--radius-md, 12px);
+  padding: var(--space-lg, 1.5rem);
+  box-shadow: 0 4px 20px rgba(26, 26, 26, 0.02);
+}
+
+.tech-stack__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--clr-text, #1A1A1A);
+  margin-bottom: var(--space-lg, 1.5rem);
+}
+
+/* Standardizing List Presentation Items */
+.tech-stack__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md, 1rem);
+}
+
+.tech-stack__item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-bottom: var(--space-xs, 0.5rem);
+  border-bottom: 1px dashed rgba(216, 197, 178, 0.4);
+}
+
+/* Remove bottom border layout anomaly on the final list item element */
+.tech-stack__item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.tech-stack__name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--clr-accent, #C86D51);
+}
+
+.tech-stack__desc {
+  font-size: 0.95rem;
+  color: var(--clr-text-muted, #665F55);
+}
+
+/* Responsive Adaptive Modifiers for Larger Viewports */
+@media (min-width: 576px) {
+  .tech-stack__item {
+    flex-direction: row;
+    align-items: baseline;
+    gap: var(--space-xs, 0.5rem);
+  }
+}
+
+</style>
